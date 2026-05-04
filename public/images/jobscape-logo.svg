@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" aria-label="Orbit dots">
+  <rect width="512" height="512" rx="124" fill="#A64D34"/>
+  <ellipse cx="256" cy="256" rx="180" ry="100" fill="none" stroke="#FAF7F2" stroke-width="10" opacity=".5" transform="rotate(-24 256 256)"/>
+  <ellipse cx="256" cy="256" rx="180" ry="100" fill="none" stroke="#E07A5F" stroke-width="10" opacity=".45" transform="rotate(24 256 256)"/>
+  <circle cx="256" cy="256" r="56" fill="#FAF7F2"/>
+  <circle cx="128" cy="196" r="22" fill="#E07A5F"/>
+  <circle cx="384" cy="316" r="22" fill="#E07A5F"/>
+</svg>
