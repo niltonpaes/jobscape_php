@@ -84,7 +84,42 @@ function inspectAndDie($value)
  */
 function formatSalary($salary)
 {
-  return '$' . number_format(floatval($salary));
+  $s = trim((string) $salary);
+  if ($s === '') {
+    return '';
+  }
+  // Plain annual number from typical form entry
+  if (preg_match('/^\d+(?:\.\d{1,2})?$/', $s)) {
+    return '$' . number_format((float) $s, 0, '.', ',');
+  }
+  // Ranges, hourly, prefixed currency, notes — display as supplied
+  return $s;
+}
+
+/**
+ * Split a listing tags string (comma-separated) into trimmed labels.
+ *
+ * @param string|null $tags
+ * @return list<string>
+ */
+function listingTagParts($tags)
+{
+  if ($tags === null) {
+    return [];
+  }
+  $raw = trim((string) $tags);
+  if ($raw === '') {
+    return [];
+  }
+  $parts = preg_split('/\s*,\s*/', $raw, -1, PREG_SPLIT_NO_EMPTY);
+  $out = [];
+  foreach ($parts as $part) {
+    $t = trim($part);
+    if ($t !== '') {
+      $out[] = $t;
+    }
+  }
+  return $out;
 }
 
 /**

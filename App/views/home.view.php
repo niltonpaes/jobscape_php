@@ -49,11 +49,7 @@
               </p>
             </div>
             <p class="line-clamp-3 text-[14px] leading-snug text-jobscape-secondary"><?= $descPlain ?></p>
-            <?php if (!empty($listing->tags)) : ?>
-              <p class="text-[13px] text-jobscape-secondary">
-                <span class="inline-block rounded-capsule border border-jobscape-border-subtle px-3 py-1 text-[12px] font-medium"><?= htmlspecialchars((string) $listing->tags, ENT_QUOTES, 'UTF-8') ?></span>
-              </p>
-            <?php endif; ?>
+            <?php loadPartial('listing-tag-badges', ['tags' => $listing->tags ?? '']); ?>
             <div class="mt-auto flex justify-end pt-1">
               <a href="/listings/<?= $lid ?>"
                 class="inline-flex items-center justify-center rounded-capsule bg-jobscape-coral px-5 py-2 text-[13px] font-semibold text-white shadow-jobscape-soft transition duration-200 hover:-translate-y-px hover:bg-jobscape-coral-dark">

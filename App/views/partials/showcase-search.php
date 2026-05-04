@@ -18,10 +18,10 @@
             class="rounded-2xl border border-jobscape-border-subtle/70 bg-jobscape-surface p-8 shadow-jobscape shadow-jobscape-soft md:p-10">
             <h1 id="hero-heading"
               class="font-fraunces text-[2.5rem] font-semibold leading-[1.08] tracking-tight text-jobscape-primary md:text-[2.75rem] md:leading-[1.06] lg:text-[3rem]">
-              Find Your <em class="not-italic text-jobscape-coral">Dream</em> Job
+              Let’s land your <em class="not-italic text-jobscape-coral">dream</em> job
             </h1>
             <p class="mt-3 max-w-xl text-[15px] leading-relaxed text-jobscape-secondary md:text-base">
-              Discover listings that match your skills—search by keyword and location.
+              Real gigs from real companies—no fluff. Drop in a keyword, add a city if you want, hit search and see what pops up.
             </p>
             <div class="mt-8">
               <form method="GET" action="/listings/search" class="space-y-3" role="search" aria-label="Search listings">

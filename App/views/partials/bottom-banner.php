@@ -17,11 +17,11 @@
         <div class="w-full min-w-0 lg:max-w-[min(100%,26rem)] xl:max-w-[min(100%,29rem)]">
           <h2
             class="font-fraunces text-[1.6875rem] font-semibold leading-[1.06] tracking-[-0.03em] text-white [text-shadow:0_1px_14px_rgba(0,0,0,0.2)] sm:text-[1.9375rem] md:text-[2rem] lg:text-[2.0625rem]">
-            Looking to hire?
+            Need someone on the team?
           </h2>
           <p
             class="mt-2 font-outfit text-[0.875rem] font-normal leading-relaxed text-white sm:mt-2.5 sm:text-[0.9375rem] md:text-[0.96875rem] [text-shadow:0_1px_10px_rgba(0,0,0,0.18)]">
-            Post your job listing now and find the perfect candidate.
+            List your opening—it only takes a few minutes.
           </p>
         </div>
 
